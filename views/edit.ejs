@@ -1,0 +1,42 @@
+<%- include('layouts/head');-%>
+
+    <body>
+        <!-- including the header of the body -->
+        <%- include('layouts/header');-%>
+            <!-- including admin nav bar -->
+            <%- include('layouts/navAdmin');-%>
+
+                <!-- creating form to get information of the user-->
+                <form id="page" action="" method="Post" enctype="multipart/form-data">
+                    <!-- Get page title from the user -->
+                    <label>Page Title</label>
+                    <input id="title" name="title" value="<%= title%>"><br />
+
+                    <!--  Get image from the user-->
+                    <label>Image</label>
+                    <input id="image" type="file" name="image">
+
+                    <!-- Get content from the user -->
+                    <div>
+                        <input id=content type="text" name="content" value="<%- content%>">
+                    </div>
+                    <input type="submit" value="Submit">
+                    <!-- including footer  -->
+                    <%- include('layouts/footer');-%>
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                        <script src="../js/tinymce/jquery.tinymce.min.js"></script>
+                        <script src="../js/tinymce/tinymce.min.js"></script>
+
+                        <!-- including tinymce for content box -->
+                        <script>
+                            tinymce.init({
+                                selector: '#content',
+                                height: 500,
+                                menubar: false
+                            })
+                        </script>
+                        <!-- including the footer of the html -->
+                        <%- include('layouts/footer');-%>
+    </body>
+    <!-- including the footer of the html -->
+    <%- include('layouts/foot');-%>

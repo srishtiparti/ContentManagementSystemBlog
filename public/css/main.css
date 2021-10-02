@@ -1,0 +1,146 @@
+
+/* Including image such that it is fixed and covers the screen */
+body{
+    background-color: aliceblue;
+    width: 98%;
+	max-width: 960px;
+    min-height: 800;
+	margin: 0 auto;
+}
+
+/* adding properties to the header of the body */
+header{
+    padding: 2%;
+	color: rgb(33, 119, 33);
+    text-shadow:0 0 10px rgb(141, 55, 141) ;
+}
+
+header img{
+    float: left;
+    height: 8%;
+    width: 8%;
+}
+
+/* fixing form width, adding border and background */
+form{
+    width: 450px;
+    border: 5px solid rgb(9, 58, 9);
+    border-radius: 10px;
+    margin: 0 auto;
+    background: rgb(228, 186, 194);
+    padding: 30px;
+}
+
+/* fixing label width and adding font properties and padding */
+label{
+    width: 170px;
+    Display: inline-block;
+    font-size: 15px;
+    font-family: cursive;
+    padding: 5px;
+}
+
+/* adding font properties for input */
+input{
+    font-size: 17px;
+    font-family: cursive;
+	margin: 10px 0;
+}
+
+/* adding font properties, background, width and margin for input type submit */
+button, input[type="submit"]{
+    background:rgb(50, 117, 50);
+	color: rgb(211, 159, 185);
+    width: 400px;
+    margin: 20px;
+    font-family:  cursive;
+    font-weight: 900;
+    padding: 5px;
+    font-size: 30px;
+}
+
+/* adding table properties for receipt */
+table{
+    font-size: 20px;
+    color: rgb(9, 58, 9);
+    border: 5px solid rgb(9, 58, 9);
+    border-radius: 10px;
+    margin: 0 25%;
+    text-align: left;
+    width: 450px;
+    padding: 10px;
+}
+
+/* adding properties to the navigation bar */
+
+nav{
+    text-align: center;
+}
+
+.nav_menu{
+    background-color: rgb(150, 101, 128);
+    border: 5px solid rgb(9, 58, 9);
+    color: white;
+    border-radius: 20px;
+    margin: 2% 0;
+	width: 98%;
+}
+
+/* adding properties to the navigation bar list */
+.nav_menu ul{
+    list-style-type: none;
+    margin: 0;
+}
+
+/* adding properties to the navigation bar list item*/
+.nav_menu ul li{
+    display: inline-block;
+	font-size: 110%;
+    width: 110px;
+}
+
+/* adding properties to the navigation bar anchor*/
+.nav_menu ul li a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+}
+
+/*adding properties for all order table*/
+.allOrderTable{
+    margin: 0;
+    padding: 0 1%;
+    width: 95%;
+}
+
+.allOrderTable th,td{
+    padding: 0 5px;
+    font-size: 90%;
+}
+
+.allOrderTable th{
+    font-weight: bolder;
+}
+
+.adminMessage{
+    text-align: center;
+    padding:auto;
+}
+
+/* Properties for page */
+#page{
+    width : 92%;
+    margin : 1% auto
+}
+
+section{
+    min-height: 600px;
+}
+
+/* properties of footer */
+footer{
+    text-align: center;
+    font-size: 110%;
+}

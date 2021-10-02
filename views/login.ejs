@@ -1,0 +1,31 @@
+<!-- including the head -->
+<%- include('layouts/head');-%>
+
+    <body>
+        <!-- including the header of the body -->
+        <%- include('layouts/header');-%>
+            <!-- creating nav bar -->
+            <%- include('layouts/nav');-%>
+                <main>
+                    <!-- creating form to get information of the user-->
+                    <form action="" method="Post">
+                        <label>Username</label>
+                        <input id="username" name="username"><br />
+
+                        <label>Password</label>
+                        <input id="password" type="password" name="password"><br />
+
+                        <input type="submit" value="Submit">
+                        <!-- printing all the errors over here -->
+                        <% if(typeof(error) !='undefined' ){ %>
+                            <p class="errors">
+                                <%= error%>
+                            </p>
+                            <% } %>
+                    </form>
+                </main>
+                <!-- including footer  -->
+                <%- include('layouts/footer');-%>
+    </body>
+    <!-- including the footer of the html -->
+    <%- include('layouts/foot');-%>

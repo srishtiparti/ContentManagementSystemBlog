@@ -1,0 +1,11 @@
+<!-- creating a navbar to go to home and pages that were added by admin -->
+<nav class="nav_menu">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+         <!-- loop to add all the pastpages -->
+         <% for(var page of pages){%>
+        <li><a href="<%= page._id%>"><%=page.title %></a></li>
+            <% } %>
+    </ul>
+</nav>

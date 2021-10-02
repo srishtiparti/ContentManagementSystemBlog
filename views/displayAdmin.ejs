@@ -1,0 +1,20 @@
+<!-- Admin display. The header is different. Here we add Admin Navigation bar -->
+<%- include('layouts/head');-%>
+
+    <body>
+        <!-- including the header of the body -->
+        <%- include('layouts/header');-%>
+            <!-- including admin nav bar -->
+            <%- include('layouts/navAdmin');-%>
+                <section class="adminMessage">
+                    <img id="userImage" src="/uploads/<%= imageName %>" alt="<%= imageName %>" />
+                    <h1><%= title%></h1>
+                    <br>
+                    <br>
+                    <h3><%- content%></h3>
+                </section>
+                <!-- including footer  -->
+                <%- include('layouts/footer');-%>
+    </body>
+    <!-- including the footer of the html -->
+    <%- include('layouts/foot');-%>

@@ -1,0 +1,48 @@
+<!-- Creating an Edit page to show All pages so the admin can edit view and delete -->
+<!-- including the head -->
+<%- include('layouts/head');-%>
+
+    <body>
+        <!-- including the header of the body -->
+        <%- include('layouts/header');-%>
+            <!-- creating nav bar -->
+            <%- include('layouts/navAdmin');-%>
+                <section>
+                    <!-- creating a table to collect all data from the database -->
+                    <table class="allOrderTable">
+                        <thead>
+                            <!-- headings of the table -->
+                            <th>Page</th>
+                            <th>View</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </thead>
+                        <tbody>
+                            <!-- loop to add all the pastpages -->
+                            <% for(var page of pages){%>
+                                <tr>
+                                    <!-- adding page's title -->
+                                    <td>
+                                        <%=page.title %>
+                                    </td>
+                                    <!-- View option -->
+                                    <td>
+                                        <a href="/view/<%= page._id%>">View</a>
+                                    </td>
+                                    <!-- Edit option -->
+                                    <td>
+                                        <a href="/edit/<%= page._id%>">Edit</a>
+                                    </td>
+                                    <!-- Delete option -->
+                                    <td>
+                                        <a href="/delete/<%= page._id%>">Delete</a>
+                                    </td>
+                                </tr>
+                                <% } %>
+                        </tbody>
+                    </table>
+                </section>
+                <!-- including the footer of the html -->
+                <%- include('layouts/footer');-%>
+    </body>
+    <%- include('layouts/foot');-%>

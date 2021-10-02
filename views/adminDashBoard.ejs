@@ -1,0 +1,19 @@
+<!-- Admin dashboard to show all the messages -->
+<%- include('layouts/head');-%>
+
+    <body>
+        <!-- including the header of the body -->
+        <%- include('layouts/header');-%>
+            <!-- including admin nav bar -->
+            <%- include('layouts/navAdmin');-%>
+                <section class="adminMessage">
+                    <h1><%= heading%></h1>
+                    <br>
+                    <br>
+                    <h3><%= message%></h3>
+                </section>
+                <!-- including footer  -->
+                <%- include('layouts/footer');-%>
+    </body>
+    <!-- including the footer of the html -->
+    <%- include('layouts/foot');-%>

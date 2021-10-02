@@ -1,0 +1,25 @@
+<!-- display. The header is different. Here we add user Navigation bar -->
+<%- include('layouts/head');-%>
+    <body>
+        <!-- including the header of the body -->
+        <%- include('layouts/header');-%>
+            <!-- including admin nav bar -->
+            <%- include('layouts/nav');-%>
+
+                <section class="adminMessage">
+                    <!-- Add image from database-->
+                    <img id="userImage" src="/uploads/<%= imageName %>" alt="<%= imageName %>" />
+
+                    <!-- Add title from the database -->
+                    <h1><%= title%></h1>
+                    <br>
+
+                    <!-- Add content from the database -->
+                    <h3><%- content%></h3>
+                </section>
+
+                <!-- including footer  -->
+                <%- include('layouts/footer');-%>
+    </body>
+    <!-- including the footer of the html -->
+    <%- include('layouts/foot');-%>
